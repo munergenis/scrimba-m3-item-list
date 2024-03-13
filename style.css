@@ -1,0 +1,102 @@
+:root {
+  --primary: #f7ded0;
+  --secondary: #e2bfb3;
+  --accent: #ffbe98;
+  /* --button: #b47b84; */
+  --button: #e17e49;
+  --text: #feece2;
+  --font: Comfortaa, Montserrat, "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: var(--font);
+}
+
+body {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+img {
+  max-width: 120px;
+
+  border: 4px solid var(--primary);
+  border-radius: 50%;
+}
+
+input,
+button {
+  width: 280px;
+  height: 50px;
+
+  border: none;
+  border-radius: 5px;
+
+  text-align: center;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+input {
+  box-sizing: border-box;
+  background-color: var(--primary);
+  color: var(--button);
+}
+
+::placeholder {
+  color: var(--button);
+  opacity: 0.5;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 1px var(--button);
+}
+
+button {
+  background-color: var(--button);
+  color: var(--text);
+
+  box-shadow: inset 2px 2px 4px #d5b2b2, inset -2px -2px 4px #917866;
+}
+
+button:active {
+  background-color: var(--primary);
+  color: var(--button);
+  box-shadow: inset 2px 2px 1px var(--button);
+}
+
+ul {
+  width: 280px;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+li {
+  padding: 15px;
+  flex-grow: 1;
+
+  background-color: var(--primary);
+  color: var(--button);
+  border-radius: 5px;
+
+  text-align: center;
+  font-size: 18px;
+}
